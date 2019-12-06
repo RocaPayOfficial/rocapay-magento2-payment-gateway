@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Rocapay module dependency
+*
+* @category    Rocapay
+* @package     Rocapay_RocapayPaymentGateway
+* @author      Rocapay
+*/
+-->
+<payment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Payment:etc/payment.xsd">
+    <methods>
+        <method name="rocapay_gateway">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+    </methods>
+</payment>

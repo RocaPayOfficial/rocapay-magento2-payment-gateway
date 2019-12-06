@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Rocapay admin configuration
+*
+* @category    Rocapay
+* @package     Rocapay_RocapayPaymentGateway
+* @author      Rocapay
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <virtualType name="Rocapay\RocapayPaymentGateway\Model\ConfigProvider" type="Magento\Payment\Model\CcGenericConfigProvider">
+        <arguments>
+            <argument name="methodCodes" xsi:type="array">
+                <item name="rocapay_gateway" xsi:type="const">Rocapay\RocapayPaymentGateway\Model\Payment::CODE</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="rocapay_gateway_config_provider" xsi:type="object">Rocapay\RocapayPaymentGateway\Model\ConfigProvider</item>
+            </argument>
+        </arguments>
+    </type>
+
+</config>

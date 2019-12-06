@@ -1,0 +1,27 @@
+{
+    "name": "rocapayofficial/rocapay-magento2-payment-gateway",
+    "type": "magento2-module",
+    "description": "RocaPay Payment Gateway integration for Magento 2",
+    "license": "MIT",
+    "keywords": [
+      "rocapay",
+      "magento",
+      "payment",
+      "bitcoin",
+      "btc",
+      "ethereum",
+      "litecoin",
+      "eth",
+      "ltc"
+    ],
+    "homepage": "https://rocapay.com",
+    "require": {
+      "rocapayofficial/rocapay-php": "dev-master"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Rocapay\\RocapayPaymentGateway\\": ""
+        }
+    }
+}

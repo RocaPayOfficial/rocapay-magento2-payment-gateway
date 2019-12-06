@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Rocapay admin configuration
+*
+* @category    Rocapay
+* @package     Rocapay_RocapayPaymentGateway
+* @author      Rocapay
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="rocapay" frontName="rocapay">
+            <module name="Rocapay_RocapayPaymentGateway" />
+        </route>
+    </router>
+</config>

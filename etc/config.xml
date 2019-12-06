@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Rocapay module dependency
+*
+* @category    Rocapay
+* @package     Rocapay_RocapayPaymentGateway
+* @author      Rocapay
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <rocapay_gateway>
+                <active>0</active>
+                <model>Rocapay\RocapayPaymentGateway\Model\Payment</model>
+                <order_status>pending_payment</order_status>
+                <payment_action>authorize_capture</payment_action>
+                <title>Rocapay Payment Gateway integration for Magento 2.x</title>
+            </rocapay_gateway>
+        </payment>
+    </default>
+</config>
