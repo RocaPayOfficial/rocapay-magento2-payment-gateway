@@ -16,7 +16,7 @@
     ],
     "homepage": "https://rocapay.com",
     "require": {
-      "rocapayofficial/rocapay-php": "dev-master"
+      "rocapayofficial/rocapay-php": "1.*"
     },
     "autoload": {
         "files": [ "registration.php" ],
